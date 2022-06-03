@@ -4,9 +4,9 @@ const main = () => {
     inputs.forEach(input => {
 
         input.addEventListener("input", event => {
-            
+
             const id = event.target.id;
-            const value = event.target.value;
+            const value = Math.round(Number(event.target.value));
 
 
             conversion(id, value);
